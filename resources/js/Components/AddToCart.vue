@@ -11,7 +11,7 @@
 
 const productId = defineProps(['productId']);
 
-const addToCart = () => {
-    console.log(productId);
+const addToCart = async () => {
+    await axios.get('/sanctum/csrf-cookie');
 }
 </script>
