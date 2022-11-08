@@ -29,15 +29,17 @@
                                             <p tabindex="0" class="focus:outline-none text-xs text-yellow-700">{{ $product->price }}</p>
                                         </div>
                                     </div>
-                                    <div class="p-4">
-                                        <div class="flex items-center">
+                                    <div class="p-4 h-56 flex flex-col justify-between">
+                                        <div class="flex flex-col">
                                             <h2 tabindex="0" class="focus:outline-none text-lg font-semibold">{{ $product->name }}</h2>
+                                            <p tabindex="0" class="focus:outline-none text-xs text-gray-600 mt-2">{{ $product->description }}</p>
                                         </div>
-                                        <p tabindex="0" class="focus:outline-none text-xs text-gray-600 mt-2">{{ $product->description }}</p>
+                                        
 
-                                        <div class="flex items-center justify-between py-4">
+                                        {{-- <!--- <div class="flex items-center justify-between py-4">
                                             <button class="bg-indigo-500 text-white p-2">Ajouter au panier</button>
-                                        </div>
+                                        </div> --> --}}
+                                        <add-to-cart></add-to-cart>
                                     </div>
                                 </div>
                             </div>
