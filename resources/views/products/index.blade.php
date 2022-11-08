@@ -39,7 +39,7 @@
                                         {{-- <!--- <div class="flex items-center justify-between py-4">
                                             <button class="bg-indigo-500 text-white p-2">Ajouter au panier</button>
                                         </div> --> --}}
-                                        <add-to-cart></add-to-cart>
+                                        <add-to-cart :product-id="{{ $product->id }}"></add-to-cart>
                                     </div>
                                 </div>
                             </div>

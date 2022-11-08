@@ -9,7 +9,9 @@
 </template>
 <script setup>
 
+const productId = defineProps(['productId']);
+
 const addToCart = () => {
-    console.log('added');
+    console.log(productId);
 }
 </script>
